@@ -1,0 +1,12 @@
+/*   Break points tomados de bootstrap (como referencia)   */
+/* Dispositivos pequeños (smartphones portrait) */
+@media (min-width: 576px) {
+
+}
+
+/* Dispositivos medianos (tablets, smartphones landscape) */
+@media (min-width: 768px) {
+    .container>h1{
+        font-size: 3vw;
+    }
+}
