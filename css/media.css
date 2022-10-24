@@ -6,6 +6,7 @@
         color: aliceblue;
         font-size: xx-large;
         font-weight: 800;
+        z-index: 99;
     }
 
     i.fa-times{
@@ -23,9 +24,32 @@
    }
    .menu__list{
         display: none;
+        transition: all 3.5s ease-out;
    }
+   .menu__list--active{
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding-top: 90px;
+        padding-left: 15px;
+        background-color: rgba(0,0,0,0.75);
+        transition: all 0.75s ease;
+   }
+   .menu__list--active .menu__item{
+        width: 100%;
+    }
+    .menu__list--active .menu__link {
+        background-color: transparent;
+        padding-left: 15px;
+   }
+   .menu__list--active .menu__link:hover {
+        color: var(--color-principal);
+    }
     .social-icons__list{
-        font-size: 0.85em;
+        font-size: 0.83em;
    }
 }
 
@@ -35,6 +59,6 @@
         justify-content: center;
     }
     .brand__slogan{
-        font-size: 3vw;
+        font-size: 3.75vw;
     }
 }
