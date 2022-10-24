@@ -1,11 +1,16 @@
 /*   Break points tomados de bootstrap (como referencia)   */
 /* Dispositivos pequeños (smartphones portrait) */
-@media (min-width: 576px) {
-
+@media (max-width: 576px) {
+   .social-icons__list{
+        font-size: 0.85em;
+   }
 }
 
 /* Dispositivos medianos (tablets, smartphones landscape) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .menu__brand>img{
+        width: 13vw;
+    }
     .brand__slogan{
         font-size: 3vw;
     }

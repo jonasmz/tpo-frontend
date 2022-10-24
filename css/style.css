@@ -45,7 +45,8 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    height: 10vh;
+    align-items: center;
+    height: 20vh;
     padding: 5px 15px;
     /* overflow: hidden; */
     font-size: 1.05em;
@@ -54,6 +55,7 @@ body{
 .menu__brand>img{
     width: 10vw;
     object-fit: cover;
+    display: none;
 }
 
 .menu__list{
@@ -96,7 +98,7 @@ li, a{
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     text-align: center;
 }
 
@@ -109,7 +111,8 @@ li, a{
 }
 
 .brand__image{
-    max-width: 90vw;
+    max-width: 80vw;
+    padding: 10px 0 20px;
 }
 
 .brand__slogan{
@@ -123,6 +126,8 @@ li, a{
 .social-icons__list{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    font-size: 1.05em;
 }
 
 .social-icons__item{
@@ -136,7 +141,8 @@ li, a{
 }
 
 .social-icons__link:hover{
-    border-left: 5px solid var(--color-contraste-dark);
+    border-left: 5px solid var(--color-contraste-light);
+    background-color: var(--color-contraste-dark);
 }
 
 .social-icons__link>.fa-facebook-official{
