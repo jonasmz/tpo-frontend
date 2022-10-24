@@ -7,3 +7,10 @@ function toggleMenu(event){
 }
 
 menu.addEventListener('click', toggleMenu, false);
+
+window.onresize = function(){
+    winWidth = window.innerWidth;
+    if(winWidth >= 480){
+        document.querySelector('.menu__list').classList.remove('menu__list--active');
+    }
+}

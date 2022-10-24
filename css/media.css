@@ -58,6 +58,10 @@
     .menu{
         justify-content: center;
     }
+
+    .brand__image{
+        width: 85vw;
+    }
     .brand__slogan{
         font-size: 3.75vw;
     }
