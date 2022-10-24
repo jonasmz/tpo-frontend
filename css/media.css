@@ -1,9 +1,25 @@
 /*   Break points tomados de bootstrap (como referencia)   */
 /* Dispositivos pequeños (smartphones portrait) */
 @media (max-width: 480px) {
+    .menu__hamburger{
+        display:block;
+        color: aliceblue;
+        font-size: xx-large;
+        font-weight: 800;
+    }
+
+    i.fa-times{
+        display: none;
+    }
+
+    .menu__brand{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
     .menu__brand>img{
         display: block;
-        width: 20vw;
+        width: 90px;
    }
    .menu__list{
         display: none;
