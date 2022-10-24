@@ -6,7 +6,7 @@
 
 /* Dispositivos medianos (tablets, smartphones landscape) */
 @media (min-width: 768px) {
-    .container>h1{
+    .brand__slogan{
         font-size: 3vw;
     }
 }
