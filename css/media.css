@@ -9,12 +9,20 @@
         display: flex;
         justify-content: center;
     }
+    .menu__image--active{
+        display: none;
+    }
 
     .brand__image{
         width: 85vw;
     }
     .brand__slogan{
         font-size: 3.75vw;
+    }
+
+    /* catalog */
+    .catalog__product{
+        flex: 0 0 40%;
     }
 }
 
@@ -29,7 +37,7 @@
         color: aliceblue;
         font-size: xx-large;
         font-weight: 800;
-        z-index: 99;
+        z-index: 998;
     }
 
     i.fa-times{
@@ -54,15 +62,18 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
-        position: absolute;
+        position: fixed;
         top: 0;
-        height: 100vh;
-        width: 100vw;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
         padding-top: 15vh;
         padding-left: 15px;
-        background-color: rgba(0,0,0,0.75);
+        background-color: rgba(0,0,0,0.95);
         transition: all 0.75s ease;
         text-align: center;
+        z-index: 1;
    }
    .menu__list--active .menu__item{
         width: 100%;
@@ -76,5 +87,10 @@
     }
     .social-icons__list{
         font-size: 0.83em;
+   }
+
+   /* catalog */
+   .catalog__product{
+    flex: 0 0 80%;
    }
 }
