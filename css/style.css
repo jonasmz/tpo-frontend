@@ -40,7 +40,6 @@ button {
 }
 
 body{
-    max-width: 100vw;
     background-color: var(--color-contraste-dark);
 }
 
@@ -58,6 +57,8 @@ body{
 }
 
 .wrap{
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     border-top: 0.1px solid var(--color-contraste-dark-alt); /*evita colapso de margenes*/
     border-bottom: 0.1px solid var(--color-contraste-dark-alt); /*evita colapso de margenes*/
@@ -69,8 +70,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    width: 100%;
+    height: 90px;
     padding: 5px 15px;
     font-size: 1.05em;
     z-index: 9999;
@@ -78,7 +78,6 @@ body{
 .menu--fixed{
     position: fixed;
     background-color: rgba(74,68,64,0.95);
-    height: 90px;
     width: 100%;
 }
 
@@ -137,11 +136,12 @@ li, a{
 
 .index-container{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: space-between;
     align-items: center;
-    height: 89.75vh;
+    height: auto;
     text-align: center;
+    flex-grow: 1;
 }
 
 .brand{
@@ -200,13 +200,12 @@ li, a{
 .catalog{
     margin-top: 100px;
     margin-bottom: 20px;
-    width: 100vw;
 }
 .catalog__products{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 7.5px;
+    gap: 10px;
 }
 
 .catalog__product{
