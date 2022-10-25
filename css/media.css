@@ -22,7 +22,6 @@
 /* Dispositivos pequeños (smartphones portrait) */
 @media (max-width: 480px) {
     .menu{
-        height: 10vh;
         flex-direction: row;
     }
     .menu__hamburger{
@@ -45,6 +44,7 @@
     .menu__brand>img{
         display: block;
         width: 90px;
+        z-index: 98;
    }
    .menu__list{
         display: none;
@@ -73,9 +73,6 @@
    }
    .menu__list--active .menu__link:hover {
         color: var(--color-principal);
-    }
-    .index-container{
-        height: 90vh;
     }
     .social-icons__list{
         font-size: 0.83em;
