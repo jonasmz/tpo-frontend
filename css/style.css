@@ -40,6 +40,11 @@ button {
 }
 
 body{
+    width: 100vw;
+    background-color: var(--color-contraste-dark);
+}
+
+.hero-image{
     max-width: 100vw;
     background-color: var(--color-contraste-dark-alt);
     background-image: url("../assets/img/page-background.jpg");
@@ -60,7 +65,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: 25vh;
     padding: 5px 15px;
     /* overflow: hidden; */
     font-size: 1.05em;
@@ -70,10 +75,15 @@ body{
     display: none;
 }
 
-.menu__brand>img{
+.menu__image{
     width: 10vw;
     object-fit: cover;
     display: none;
+}
+.menu__image--active{
+    width: 80px;
+    object-fit: cover;
+    display: block;
 }
 
 .menu__list{
@@ -111,12 +121,12 @@ li, a{
     color: var(--color-principal);
 }
 
-.container{
+.index-container{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 75vh;
     text-align: center;
 }
 

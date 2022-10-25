@@ -1,6 +1,30 @@
+/* Dispositivos medianos (tablets, smartphones landscape) */
+@media (max-width: 768px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu__list{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .brand__image{
+        width: 85vw;
+    }
+    .brand__slogan{
+        font-size: 3.75vw;
+    }
+}
+
 /*   Break points tomados de bootstrap (como referencia)   */
 /* Dispositivos pequeños (smartphones portrait) */
 @media (max-width: 480px) {
+    .menu{
+        height: 10vh;
+        flex-direction: row;
+    }
     .menu__hamburger{
         display:block;
         color: aliceblue;
@@ -29,14 +53,16 @@
    .menu__list--active{
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-start;
         position: absolute;
         top: 0;
-        height: 100%;
-        width: 100%;
-        padding-top: 90px;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 15vh;
         padding-left: 15px;
         background-color: rgba(0,0,0,0.75);
         transition: all 0.75s ease;
+        text-align: center;
    }
    .menu__list--active .menu__item{
         width: 100%;
@@ -48,21 +74,10 @@
    .menu__list--active .menu__link:hover {
         color: var(--color-principal);
     }
+    .index-container{
+        height: 90vh;
+    }
     .social-icons__list{
         font-size: 0.83em;
    }
-}
-
-/* Dispositivos medianos (tablets, smartphones landscape) */
-@media (max-width: 768px) {
-    .menu{
-        justify-content: center;
-    }
-
-    .brand__image{
-        width: 85vw;
-    }
-    .brand__slogan{
-        font-size: 3.75vw;
-    }
 }
