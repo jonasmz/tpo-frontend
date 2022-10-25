@@ -86,7 +86,7 @@
    .menu__list--active .menu__link:hover {
         color: var(--color-principal);
     }
-    .menu__item--active{
+    .menu__list--active .menu__link--active{
         border-left: 5px solid var(--color-principal);
     }
     .social-icons__list{

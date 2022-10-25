@@ -198,22 +198,97 @@ li, a{
 
 /*catalogo*/
 .catalog{
-    margin-top: 100px;
+    margin-top: 125px;
     margin-bottom: 20px;
 }
 .catalog__products{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 0 50px;
 }
 
 .catalog__product{
+    position: relative;
     flex: 0 0 20%;
     /* outline: 1px solid red; */
-    background-color: rgba(43,43,43,0.75);
+    background-color: rgba(43,43,43,0.85);
+    border-radius: 10px 10px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product__favourite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241,242,237, 0.85);
+    border-radius: inherit;
+    opacity: 0;
+    transition: 1s;
+}
+.product__favourite:hover{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+.product__favourite>.fa-heart{
+    font-size: 3.5em;
+    color: var(--color-secondary-red);
+    margin: 10px auto;
+}
+.product__favourite>p{
+    font-size: 1.2vw;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-contraste-dark-alt);
+}
+
+.product__offer{
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+    background-color: var(--color-principal);
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.95em;
+    text-align: justify;
+    color: var(--color-contraste-dark);
 }
 
 .product__image{
     width: 100%;
+}
+
+.product__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.product__title{
+    flex-grow: 1;
+    color: var(--color-contraste-light);
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.product__price{
+    font-weight: 450;
 }
