@@ -69,7 +69,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 10vh;
     width: 100%;
     padding: 5px 15px;
     font-size: 1.05em;
@@ -140,7 +140,7 @@ li, a{
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    height: calc(99.7vh - 90px);
+    height: 89.75vh;
     text-align: center;
 }
 
