@@ -9,20 +9,6 @@
     font-family: 'Roboto', sans-serif; /* Esta es una opción de fuente */
 }
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  background: none;
-  border: 0;
-  color: inherit;
-  /* cursor: default; */
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-}
-
 :root{
     /*
         declaracion de variables para colores principales del theme.
@@ -83,6 +69,10 @@ body{
 
 .menu__hamburger{
     display: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: var(--color-contraste-light);
 }
 
 .menu__image{
@@ -311,18 +301,54 @@ li, a{
 
 .contact__form label{
     color: var(--color-contraste-light);
-    margin: 0px;
+    margin-bottom: 3px;
 }
-.contact__form input{
+.contact__form input, .contact__comment{
     margin: 0 0 10px;
     height: 2em;
+    background: var(--color-contraste-light);
+    border: 2px solid var(--color-contraste-dark);
+    color: var(--color-contraste-dark-alt);
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0.5em;
+    outline: none;
+    transition: 0.5s;
 }
+.contact__form input:focus-visible, .contact__comment:focus-visible  {
+    outline: 1px solid var(--color-principal);
+    outline-offset: 3px;
+    border-color: transparent;
+    transition: 0.25s;
+}
+.contact__form .contact__submit{
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--color-contraste-dark-alt);
+    color: var(--color-contraste-light);
+    border: 1px solid var(--color-contraste-light);
+    height: 100%;
+    width: 25%;
+}
+
 .contact__comment{
     height: 5em;
+    padding: 5px;
+    color: var(--color-contraste-dark-alt);
+}
+
+.contact__map{
+    display: flex;
+    flex-direction: column;
 }
 
 .contact__map>iframe{
+    position: relative;
     display: inline-block;
+    flex-grow: 1;
     width: 100%;
-    height: 80%;
+    padding: 5px;
+    background-color: var(--color-contraste-light);
+    border: 1px solid var(--color-contraste-dark-alt);
 }

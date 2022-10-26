@@ -21,6 +21,11 @@
     .catalog__product{
         flex: 0 0 40%;
     }
+
+    /* contact */
+    .contact>section{
+        flex: 0 0 75%;
+    }
 }
 
 /*   Break points tomados de bootstrap (como referencia)   */
@@ -65,7 +70,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        padding-top: 15vh;
+        padding-top: 90px;
         padding-left: 15px;
         background-color: rgba(0,0,0,0.95);
         transition: all 0.75s ease;
