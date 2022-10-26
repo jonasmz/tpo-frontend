@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body class="hero-image hero-image--fixed">
+    <div class="wrap">
+        <nav class="menu menu--fixed">
+            <button class="menu__hamburger"><i class="fa fa-bars"></i><i class="fa fa-times"></i></button>
+            <figure class="menu__brand"><img src="../assets/img/menu-brand.png" class="menu__image menu__image--active" alt="logo de menu"></figure>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="catalogo.html" class="menu__link menu__link--active">Catalogo</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Empresa</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+        </nav>
+        <main class="contact">
+            <section class="contact__form">
+                <h2>Formulario de contacto</h2>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" placeholder="Nombre">
+                    <label for="surname">Apellido:</label>
+                    <input type="text" name="surname" placeholder="Apellido">
+                    <label for="trade">Razon Social</label>
+                    <input type="text" name="trade" placeholder="Razon Social">
+                    <label for="id">CUIT:</label>
+                    <input type="number" name="id" placeholder="CUIT">
+                    <label for="phone">Telefono:</label>
+                    <input type="tel" name="phone" placeholder="Telefono">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="E-Mail">
+                    <label for="comment">Comentarios:</label>
+                    <textarea name="comment" class="contact__comment" placeholder="Ingrese a qui su consulta"></textarea>
+                    <input type="submit" value="Enviar" class="contact__submit">
+                </form>
+            </section>
+            <section class="contact__map">
+                <h2>Casa Matriz</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4028300540053!2d-58.36402368560857!3d-34.619259180455444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d05fb035ed%3A0x46598bde12d2877e!2sJuana%20Manso%201751%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1666804981098!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
