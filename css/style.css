@@ -215,9 +215,6 @@ li, a{
     /* outline: 1px solid red; */
     background-color: rgba(43,43,43,0.85);
     border-radius: 10px 10px 2px 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .product__favourite{
@@ -267,6 +264,15 @@ li, a{
     font-size: 0.95em;
     text-align: justify;
     color: var(--color-contraste-dark);
+}
+.product__offer--reserve{
+    background-color: var(--color-secondary-red);
+    color: var(--color-contraste-light);
+}
+.product__offer--no-stock{
+    background-color: var(--color-contraste-dark);
+    color: var(--color-contraste-light);
+    opacity: 0.75;
 }
 
 .product__image{
