@@ -296,7 +296,7 @@ li, a{
 .contact__form>form{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 .contact__form label{
@@ -330,6 +330,7 @@ li, a{
     border: 1px solid var(--color-contraste-light);
     height: 100%;
     width: 25%;
+    margin-bottom: 0;
 }
 
 .contact__comment{
