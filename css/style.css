@@ -308,6 +308,7 @@ li, a{
     height: 2em;
     background: var(--color-contraste-light);
     border: 2px solid var(--color-contraste-dark);
+    border-radius: 5px;
     color: var(--color-contraste-dark-alt);
     font: inherit;
     line-height: normal;
@@ -357,6 +358,7 @@ li, a{
     padding: 5px;
     background-color: var(--color-contraste-light);
     border: 1px solid var(--color-contraste-dark-alt);
+    border-radius: 5px;
 }
 
 .about{
