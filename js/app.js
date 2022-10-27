@@ -14,3 +14,12 @@ window.onresize = function(){
         document.querySelector('.menu__list').classList.remove('menu__list--active');
     }
 }
+
+/* validacion de formulario */
+function getText(){
+    var email = document.getElementById("name");
+    alert(email.value);
+}
+
+var submit = document.getElementById('send');
+submit.addEventListener('click', getText, false);
