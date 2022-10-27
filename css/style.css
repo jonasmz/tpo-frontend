@@ -328,9 +328,14 @@ li, a{
     background-color: var(--color-contraste-dark-alt);
     color: var(--color-contraste-light);
     border: 1px solid var(--color-contraste-light);
+    border-radius: 5px;
     height: 100%;
     width: 25%;
     margin-bottom: 0;
+}
+.contact__submit:hover{
+    background-color: var(--color-contraste-dark);
+    border: 1px solid var(--color-principal);
 }
 
 .contact__comment{
