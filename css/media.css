@@ -26,6 +26,15 @@
     .contact>section{
         flex: 0 0 75%;
     }
+
+    /* footer */
+    .footer{
+        flex-flow: column wrap;
+    }
+    .footer__item{
+        flex: 0 0 90%;
+        border-right: none;
+    }
 }
 
 /*   Break points tomados de bootstrap (como referencia)   */
