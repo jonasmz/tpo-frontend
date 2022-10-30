@@ -469,9 +469,17 @@ li, a{
     margin-bottom: 5px;
 }
 
-.footer a:hover{
+.footer ul>li:hover{
+    padding-bottom: 3px;
     color: var(--color-principal);
-    text-decoration: underline;
+    font-size: 1.1em;
+    transition: 0.25s;
+}
+.footer ul>li{
+    transition: 0.3s;
+}
+.footer ul>li>a{
+    color: inherit;
 }
 
 .sitemap__item{
