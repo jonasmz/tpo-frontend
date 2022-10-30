@@ -15,14 +15,8 @@ window.onresize = function(){
     }
 }
 
-/* validacion de formulario */
-
-
-// var submit = document.getElementById('send');
-// submit.addEventListener('click', getText, false);
-
 /* consumiendo api generadora de usuarios aleatorios */
-function getUsers(){
+function getReviews(){
     fetch("https://randomuser.me/api/?results=2")
     .then((results) => {
         return results.json();

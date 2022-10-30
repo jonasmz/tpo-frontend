@@ -312,7 +312,7 @@ li, a{
     margin-bottom: 3px;
 }
 .contact__form input, .contact__comment{
-    margin: 0 0 10px;
+    margin: 5px;
     height: 2em;
     background: var(--color-contraste-light);
     border: 2px solid var(--color-contraste-dark);
@@ -367,6 +367,17 @@ li, a{
     background-color: var(--color-contraste-light);
     border: 1px solid var(--color-contraste-dark-alt);
     border-radius: 5px;
+}
+/*validacion de formulario*/
+.error{
+    display: none;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: #f02525;
+    background-color: rgba(0, 0, 0, 0.75);
+    font: 200;
+    font-size: 0.85em;
+    text-align: right;
 }
 
 .about{
