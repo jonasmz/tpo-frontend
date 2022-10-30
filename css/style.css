@@ -79,6 +79,10 @@ body{
     color: var(--color-contraste-light);
 }
 
+.menu__brand{
+    z-index: 999;
+}
+
 .menu__image{
     width: 80px;
 }
