@@ -38,7 +38,7 @@
     }
 
     .review{
-        flex: 0 0 80%;
+        flex: 0 0 45%;
     }
 
     /* footer */
@@ -122,4 +122,8 @@
    .catalog__product{
     flex: 0 0 80%;
    }
+
+   .review{
+    flex: 0 0 75%;
+}
 }
