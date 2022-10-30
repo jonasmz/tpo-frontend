@@ -15,19 +15,6 @@ window.onresize = function(){
     }
 }
 
-/* consumiendo api generadora de usuarios aleatorios */
-function getReviews(){
-    fetch("https://randomuser.me/api/?results=2")
-    .then((results) => {
-        return results.json();
-    })
-    .then((data)=>{
-        let pElement = document.querySelector('.reviews__apidata');
-        console.log(data);
-        pElement.textContent = JSON.stringify(data);
-    })
-}
-
 function setMyAlert(title, text, alert_type){
     var myAlert = document.getElementById('myalert__container');
     var mytitle = myAlert.querySelector('.myalert__title');

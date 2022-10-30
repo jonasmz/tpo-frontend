@@ -27,6 +27,20 @@
         flex: 0 0 75%;
     }
 
+    /*about*/
+    .about__info>article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post__image{
+        max-width: 100%;
+    }
+
+    .review{
+        flex: 0 0 80%;
+    }
+
     /* footer */
     .footer{
         flex-flow: column wrap;
