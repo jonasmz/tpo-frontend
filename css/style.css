@@ -145,6 +145,10 @@ li, a{
     font-size: 3.5vw;
     width: 100vw;
     text-align: center;
+    text-shadow: 0 2px 8px var(--color-contraste);
+    color: var(--color-principal);
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
 }
 
 .social-icons__list{
