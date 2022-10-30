@@ -160,7 +160,27 @@
                 </ul>
             </div>
         </footer>
+        <div id="myalert__container">
+            <div id="myalert">
+                <div class="myalert__upbar">
+                    <h3 class="myalert__title"></h3>
+                </div>
+                <div class="myalert__info">
+                    <div class="myalert__icon-container"></div>
+                    <div class="myalert__text"></div>
+                </div>
+                <div class="myalert__bottom">
+                    <button class="myalert__acept" onclick="myalertClose()">Aceptar</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="../js/app.js"></script>
+    <script>
+        var obj = document.getElementsByClassName('product__favourite');
+        Array.from(obj).forEach((element)=>{
+            element.addEventListener('click', setMyAlert.bind(this, "Accion Completada correctamente", "El producto ha sido añadido a su lista de favoritos", 'success'), false);
+        });
+    </script>
 </body>
 </html>
